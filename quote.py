@@ -171,7 +171,7 @@ with tab2:
                 result_list = []
                 for d in data:
                     total_fee = float(d.get("TotalFee", 0))
-                    usd_fee = round(total_fee / 7.2 + 3%, 3)
+                    usd_fee = round((total_fee / 7.1) * 1.03, 3)
                     result_list.append({
                         "运输方式": d.get("ServiceCnName", ""),
                         "运输时效": d.get("Effectiveness", ""),
@@ -226,4 +226,5 @@ with tab3:
 # ------------------------- 页面底部 -------------------------
 st.markdown("---")
 st.caption("©2025 浩远物流（当前汇率: 7.1）")
+
 
