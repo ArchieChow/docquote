@@ -6,7 +6,7 @@ import pandas as pd
 # ------------------------- 报价计算函数 -------------------------
 def calculate_price(cost_price, promotion_rate, accessories_cost, quantity):
     insurance_fee_rate = 0.03
-    profit_margin = 0.30
+    profit_margin = 0.43
     exchange_rate = 7.15
 
     # 成本构成（不含促销）
@@ -226,6 +226,7 @@ with tab3:
 # ------------------------- 页面底部 -------------------------
 st.markdown("---")
 st.caption("©2025 浩远物流（当前汇率: 7.15）")
+
 
 
 
